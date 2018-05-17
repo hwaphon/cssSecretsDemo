@@ -19,9 +19,15 @@ export default {
   height: 100%;
 }
 
-html, body {
+html {
 	height: 100%;
+}
+
+body {
+  height: 100%;
 	background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 * {

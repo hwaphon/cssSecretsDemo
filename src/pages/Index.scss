@@ -4,10 +4,7 @@
 * @Last Modified by:   hwaphon
 * @Last Modified time: 2018-05-17 17:47:48
 */
-.Index {
-	height: 100%;
-}
-
+.Index,
 .Index-row,
 .Index-col,
 .Index-menu {
@@ -26,7 +23,7 @@
 
 	margin-top: 45px;
 	padding: 45px 24px;
-	
+
 	border: 1px solid #ddd;
 	background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 	color: #303133;

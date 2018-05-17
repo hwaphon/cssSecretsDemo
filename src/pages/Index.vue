@@ -28,6 +28,7 @@
 </template>
 
 <script>
+	import Chapter from '@/const/index'
 	export default {
 		data () {
 			return {
@@ -47,25 +48,7 @@
 						]
 					}
 				],
-				menuContents: {
-					'1-1': [ 
-						{ 
-							src: '//jsfiddle.net/Hwaphon/e6Lg0a3r/embedded/html,css,result/',
-							tips: [
-								'background-clip 属性规定背景的绘制区域。'
-							]
-						}
-					],
-					'1-2': [
-						{
-							src: '//jsfiddle.net/Hwaphon/68ry34t1/embedded/html,css,result/',
-							tips: [
-								'绘制多重边框有两种方法。第一种是使用 box-shadow ,第二种是 outline。', 
-								'box-shadow 前三个参数指定为0，第四个参数指定为要模拟的边框宽度，第五个参数指定为要模拟的边框颜色，就可以实现一个边框效果。由于 box-shadow 可以以逗号分隔指定多个值，所以可以为元素添加任意多个'
-							]
-						}
-					]
-				},
+				menuContents: Chapter,
 				currentContent: [],
 			}
 		},
