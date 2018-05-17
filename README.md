@@ -1,21 +1,6 @@
-# makecssdemo
 
-> A Vue.js project
+## 介绍
 
-## Build Setup
+CSS 揭秘一书中 Demo 的在线展示。 使用 `Vue + Element` 搭建展示页面，`JSFiddle` 展示 `Demo` 代码及运行结果。
 
-``` bash
-# install dependencies
-npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
