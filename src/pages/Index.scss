@@ -1,0 +1,56 @@
+/*
+* @Author: hwaphon
+* @Date:   2018-05-17 17:47:15
+* @Last Modified by:   hwaphon
+* @Last Modified time: 2018-05-17 17:47:48
+*/
+.Index {
+	height: 100%;
+}
+
+.Index-row,
+.Index-col,
+.Index-menu {
+	height: 100%;
+}
+
+.menu-content {
+	min-height: 100%;
+	padding: 32px 24px;
+
+	background-color: #FFF;
+}
+
+.content-tips {
+	position: relative;
+
+	margin-top: 45px;
+	padding: 45px 24px;
+	
+	border: 1px solid #ddd;
+	background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+	color: #303133;
+}
+
+.content-tips::before {
+	content: "Tips";
+	position: absolute;
+	top: -21px;
+	left: 16px;
+
+	width: 42px;
+	height: 42px;
+
+	background-color: #409EFF;
+	border: 2px solid #ddd;
+	border-radius: 100%;
+	color: #FFF;
+	text-align: center;
+	line-height: 42px;
+	box-shadow: 1px 1px 8px rgba(0,0,0,.3), -1px -1px 8px rgba(0,0,0,.3);
+}
+
+.content-tips p {
+	line-height: 1.5;
+	margin-top: 16px;
+}

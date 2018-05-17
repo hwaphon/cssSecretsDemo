@@ -17,7 +17,9 @@
 						<h2>例 {{ index + 1}}</h2>
 						<iframe width="100%" height="300" :src="content.src" allowpaymentrequest allowfullscreen="allowfullscreen" frameborder="0">
 						</iframe>
-						<p class="content-tips" v-if="content.tips">{{ content.tips }}</p>
+						<div class="content-tips" v-if="content.tips.length > 0">
+							<p v-for="tip in content.tips">{{ tip }}</p>
+						</div>
 					</div>
 				</div>
 			</el-col>
@@ -29,6 +31,7 @@
 	export default {
 		data () {
 			return {
+				jsfiddle: '',
 				defaultActive: '1-1',
 				menus: [
 					{ 
@@ -48,7 +51,18 @@
 					'1-1': [ 
 						{ 
 							src: '//jsfiddle.net/Hwaphon/e6Lg0a3r/embedded/html,css,result/',
-							tips: 'background-clip 属性规定背景的绘制区域。'
+							tips: [
+								'background-clip 属性规定背景的绘制区域。'
+							]
+						}
+					],
+					'1-2': [
+						{
+							src: '//jsfiddle.net/Hwaphon/68ry34t1/embedded/html,css,result/',
+							tips: [
+								'绘制多重边框有两种方法。第一种是使用 box-shadow ,第二种是 outline。', 
+								'box-shadow 前三个参数指定为0，第四个参数指定为要模拟的边框宽度，第五个参数指定为要模拟的边框颜色，就可以实现一个边框效果。由于 box-shadow 可以以逗号分隔指定多个值，所以可以为元素添加任意多个'
+							]
 						}
 					]
 				},
@@ -66,49 +80,6 @@
 	}
 </script>
 
-<style scoped>
-	.Index {
-		height: 100%;
-	}
-
-	.Index-row,
-	.Index-col,
-	.Index-menu {
-		height: 100%;
-	}
-
-	.menu-content {
-		min-height: 100%;
-		padding: 32px 24px;
-
-		background-color: #FFF;
-	}
-
-	.content-tips {
-		position: relative;
-
-		margin-top: 45px;
-		padding: 45px 24px;
-		
-		border: 1px solid #ddd;
-		background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
-	}
-
-	.content-tips::before {
-		content: "Tips";
-		position: absolute;
-		top: -21px;
-		left: 16px;
-
-		width: 42px;
-		height: 42px;
-
-		background-color: #409EFF;
-		border: 2px solid #ddd;
-		border-radius: 100%;
-		color: #FFF;
-		text-align: center;
-		line-height: 42px;
-		box-shadow: 1px 1px 8px rgba(0,0,0,.3), -1px -1px 8px rgba(0,0,0,.3);
-	}
+<style scoped lang="scss">
+@import './Index.scss';
 </style>
