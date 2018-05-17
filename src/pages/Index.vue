@@ -35,8 +35,8 @@
 				jsfiddle: '',
 				defaultActive: '1-1',
 				menus: [
-					{ 
-						index: '1', 
+					{
+						index: '1',
 						title: '第二章 背景与边框',
 						submenu: [
 							{ index: '1-1', title: '1. 半透明边框' },
@@ -59,6 +59,9 @@
 		},
 		created () {
 			this.currentContent = this.menuContents[this.defaultActive]
+		},
+		updated () {
+			console.log('updated')
 		}
 	}
 </script>

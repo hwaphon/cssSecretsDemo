@@ -37,6 +37,25 @@ const chapter1 = {
 				'一个元素包含三个矩形，一个是 content 矩形，一个是 content + padding 矩形，还有一个是 content + padding + border 矩形。background-origin 用于设置背景图相对于哪个矩形进行定位，默认是 padding-box，为了实现背景图与内边距一致的效果，可将默认值更改为 content-box。'
 			]
 		}
+	],
+	'1-4': [
+		{
+			src: '//jsfiddle.net/Hwaphon/so6ozq8u/embedded/result,html,css/',
+			tips: [
+				'利用 box-shadow 和 outline 可以实现这个效果，box-shadow 第四个参数用于设置扩张半径，可保持元素的圆角，outline可以设置边框，但是无法保持圆角。但是这二者一重叠，就可以将元素和 outline 之间的空白填补上。',
+				'box-shadow 第四个参数扩张半径的设置是有讲究的，在元素圆角处将圆形描述出来，就不难发现，圆心到外边框的距离为 √ (radius ^ 2 + radius ^2)，所以 box-shadow 扩展半径要大于 (√ 2 - 1) * radius, 小于 (√ 2 - 1) * radius + outline 边框宽度。'
+			]
+		}
+	],
+	'1-5': [
+		{
+			src: '//jsfiddle.net/Hwaphon/1zobd5xe/embedded/result,html,css/',
+			tips: [
+				'可以使用 repeating-linear-grandient 生成斜向条纹。',
+				'如果某个色标的位置值比整个列表中在它之前的色标的位置值都要小，则该色标的位置值会被设置为它前面所有色标位置值的最大值。',
+				'为了设置同色系的条纹，可以先为元素设置好背景色，然后设置透明渐变以获取淡色条纹。'
+			]
+		}
 	]
 }
 
