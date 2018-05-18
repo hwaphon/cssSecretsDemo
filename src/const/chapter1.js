@@ -56,6 +56,38 @@ const chapter1 = {
 				'为了设置同色系的条纹，可以先为元素设置好背景色，然后设置透明渐变以获取淡色条纹。'
 			]
 		}
+	],
+	'1-6': [
+		{
+			src: '//jsfiddle.net/Hwaphon/m1wwcaqu/1/embedded/result,html,css/',
+			tips: [
+				'background-image 可以用逗号分隔指定多个值，借用这个特性可以实现许多有趣的图形。'
+			]
+		},
+		{
+			src: '//jsfiddle.net/Hwaphon/qr99Lbx6/embedded/result,html,css/',
+			tips: [ '在未利用预处理器的情况下，如果需要修改圆点的尺寸及间隔，将改动四处代码。建议使用预处理器的 mixins。']
+		},
+		{
+			src: '//jsfiddle.net/Hwaphon/bjxghn4v/embedded/result,html,css/',
+			tips: [ '此例的实现依赖于 background-position 的使用。' ]
+		}
+	],
+	'1-7': [
+		{
+			src: '//jsfiddle.net/Hwaphon/fnvek1w3/embedded/result,html,css/',
+			tips: [
+				'将三个背景的宽度设置为质数，这样背景重复的最小尺寸将为三个质数的乘积。所以选择大小合适的质数将使的在已知分辨率下无规律可循，即实现伪随机。'
+			]
+		}
+	],
+	'1-8': [
+		{
+			src: '//jsfiddle.net/Hwaphon/8nba02wb/embedded/result,html,css/',
+			tips: [
+				'结合 background-clip 和 background-origin。 background-origin 的值默认是 padding-box，所以背景图像在 padding-box 的基础上显示是正常的，由于 background-clip 又指明将背景延伸到 border-box，所以这个时候的背景实际上是被拉伸的。为了正常的显示，我们需要先将 background-origin 设置为 border-box。'
+			]
+		}
 	]
 }
 

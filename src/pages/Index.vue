@@ -37,7 +37,7 @@
 				menus: [
 					{
 						index: '1',
-						title: '第二章 背景与边框',
+						title: '第2章 背景与边框',
 						submenu: [
 							{ index: '1-1', title: '1. 半透明边框' },
 							{ index: '1-2', title: '2. 多重边框' },
@@ -45,6 +45,20 @@
 							{ index: '1-4', title: '4. 边框内圆角' },
 							{ index: '1-5', title: '5. 条纹背景' },
 							{ index: '1-6', title: '6. 复杂的背景图案' },
+							{ index: '1-7', title: '7. 伪随机背景' },
+							{ index: '1-8', title: '8. 连续的图像边框' }
+						]
+					},
+					{
+						index: '2',
+						title: '第3章 形状',
+						submenu: [
+							{ index: '2-1', title: '自适应的椭圆' },
+							{ index: '2-2', title: '平行四边形' },
+							{ index: '2-3', title: '菱形图片' },
+							{ index: '2-4', title: '切角效果' },
+							{ index: '2-5', title: '梯形标签页' },
+							{ index: '2-6', title: '简单的饼图' }
 						]
 					}
 				],
