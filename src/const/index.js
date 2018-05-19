@@ -6,5 +6,6 @@
 */
 
 import chapter1 from './chapter1'
+import chapter2 from './chapter2'
 
-export default Object.assign({}, chapter1)
+export default Object.assign({}, chapter1, chapter2)
