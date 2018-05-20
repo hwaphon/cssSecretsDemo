@@ -53,12 +53,23 @@
 						index: '2',
 						title: '第3章 形状',
 						submenu: [
-							{ index: '2-1', title: '自适应的椭圆' },
-							{ index: '2-2', title: '平行四边形' },
-							{ index: '2-3', title: '菱形图片' },
-							{ index: '2-4', title: '切角效果' },
-							{ index: '2-5', title: '梯形标签页' },
-							{ index: '2-6', title: '简单的饼图' }
+							{ index: '2-1', title: '1. 自适应的椭圆' },
+							{ index: '2-2', title: '2. 平行四边形' },
+							{ index: '2-3', title: '3. 菱形图片' },
+							{ index: '2-4', title: '4. 切角效果' },
+							{ index: '2-5', title: '5. 梯形标签页' },
+							{ index: '2-6', title: '6. 简单的饼图' }
+						]
+					},
+					{
+						index: '3',
+						title: '第4章 视觉效果',
+						submenu: [
+							{ index: '3-1', title: '1. 单侧投影' },
+							{ index: '3-2', title: '2. 不规则投影' },
+							{ index: '3-3', title: '3. 染色效果' },
+							{ index: '3-4', title: '4. 毛玻璃效果' },
+							{ index: '3-5', title: '5. 折角效果' }
 						]
 					}
 				],
