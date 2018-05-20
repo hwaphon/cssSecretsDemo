@@ -38,6 +38,44 @@ const chapter2 = {
         '使用 clip-path 可以解决图片不是正方形的问题，除菱形外 clip-path 还可以指定其它的很多形状。clip-path 的兼容性还不是很好，建议使用前用 Caniuse 查一下。'
       ]
     }
+  ],
+  '2-4': [
+    {
+      src: '//jsfiddle.net/Hwaphon/19qgzdp1/embedded/result,html,css/',
+      tips: [
+        '利用 background-image 属性为元素设置四个背景，利用 background-position 让每个元素处于一个不同的角落，利用 background-size 让每一个背景占据 1/4 的空间位置， 使用 background-repeat 禁止每个背景的平铺行为。'
+      ]
+    },
+    {
+      src: '//jsfiddle.net/Hwaphon/cfcpgf1s/embedded/result,html,css/',
+      tips: [
+        '只需要将切角效果中使用的 linear-gradient 改成 radial-gradient 就可以实现弧角效果。'
+      ]
+    }
+  ],
+  '2-5': [
+    {
+      src: '//jsfiddle.net/Hwaphon/we49cw9v/embedded/result,html,css/',
+      tips: [
+        '在 3D 空间内旋转一个矩形，投放到 2D 屏幕上就是一个梯形。如果直接对元素本身进行操作，那么元素上的文字也会因为旋转而变形，所以可以在元素的伪元素上进行旋转操作。在 3D 空间内的元素投放到 2D 屏幕会造成尺寸的变化，所以可以先固定 transform-origin 的值为 bottom，然后再缩放以达到文字垂直居中的效果。',
+        '将 transform-origin 设置为 bottom left 和 bottom right 会分别生成一个左梯形和右梯形。'
+      ]
+    }
+  ],
+  '2-6': [
+    {
+      src: '//jsfiddle.net/Hwaphon/cx82d7mk/1/embedded/result,html,css/',
+      tips: [
+        '首先将一个圆形，分成左右两块相等颜色不同的半圆，为元素背景设置渐变可实现这一点。然后用圆形的伪元素遮住右半圆，且伪元素的颜色与左半圆相同，可设置为 inherit。然后只需要旋转伪元素以透露出被遮盖住的右半圆即可实现扇形图效果。',
+        '上面这种做法只能实现平分的效果，如果右半圆颜色要遮住左半圆，可以通过改变伪元素的颜色来实现。'
+      ]
+    },
+    {
+      src: '//jsfiddle.net/Hwaphon/2b49fyyy/embedded/result,html,css,js/',
+      tips: [
+        '这种直接指定百分比的形式更容易使用，不过这依赖于 animation-delay 的一个特性：指定一个负的动画延时来直接跳至动画中的任意时间点。所以我们只需要设置 animation-play-state 为 paused 去停止动画的播放，然后读取元素内容中指定的百分比去设置动画延迟中的负值即可。'
+      ]
+    }
   ]
 }
 
