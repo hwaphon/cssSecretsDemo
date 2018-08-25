@@ -1,7 +1,7 @@
 <template>
 	<div class="Index">
 		<el-row class="Index-row">
-			<el-col :span="4" :offset="2" class="Index-col">
+			<el-col :span="5" :offset="2" class="Index-col">
 				<el-menu mode="vertical" class="Index-menu" :default-active="defaultActive" @select="selectMenu">
 					<el-submenu :index="menu.index" v-for="menu in menus" :key="menu.index">
 						<span slot="title">{{ menu.title}}</span>
@@ -11,7 +11,7 @@
 					</el-submenu>
 				</el-menu>
 			</el-col>
-			<el-col :span="16" class="Index-col">
+			<el-col :span="15" class="Index-col">
 				<div class="menu-content">
 					<div v-for="(content, index) in currentContent" :key="index">
 						<h2>例 {{ index + 1}}</h2>
@@ -92,5 +92,5 @@
 </script>
 
 <style scoped lang="scss">
-@import './Index.scss';
+	@import './Index.scss';
 </style>
